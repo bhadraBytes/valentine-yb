@@ -12,7 +12,7 @@ body.dark {
   transition:background 2s ease;
 }
 
-/* Floating warning */
+/* Warning */
 .warning {
   position:fixed;
   top:14px;
@@ -44,7 +44,7 @@ body.dark {
   font-family:"Playfair Display",serif;
   color:#ff8fab;
   margin-bottom:6px;
-  transition:transform .4s ease, text-shadow .4s ease;
+  transition:.4s ease;
 }
 
 .glow {
@@ -60,7 +60,7 @@ body.dark {
   75% { transform:translateX(4px); }
 }
 
-/* Secret text */
+/* Secret */
 #secret {
   font-size:.85rem;
   color:#ffb3c6;
@@ -89,7 +89,12 @@ body.dark {
   color:#ffe5ec;
 }
 
-/* Typewriter (desktop only) */
+#text.final {
+  color:#ffb3c6;
+  font-style:italic;
+}
+
+/* Typewriter */
 .typewriter {
   border-right:1px solid #ff8fab;
   white-space:nowrap;
@@ -150,7 +155,7 @@ body.reading .card > *:not(#note) {
   filter:blur(1px);
 }
 
-/* Floating hearts & teddys */
+/* Hearts & teddys */
 .float {
   position:fixed;
   bottom:-40px;
@@ -167,7 +172,7 @@ body.reading .card > *:not(#note) {
   100% { transform:translate(0,-120vh); opacity:0; }
 }
 
-/* Warm mood */
+/* Warm */
 body.warm {
   background:radial-gradient(circle at top,#2a0f1f,#12060c);
   animation:breathe 8s ease-in-out infinite;
@@ -178,7 +183,7 @@ body.warm {
   50% { background-size:110% 110%; }
 }
 
-/* Mobile fixes */
+/* Mobile fix */
 @media (max-width:480px) {
   #text {
     font-size:.95rem;
