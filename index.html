@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine?</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Janudo 🖤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Will you be my Valentine? 💖</h1>
-        <img id="gif" src="https://media.giphy.com/media/DtBHcARLqNAvVnYsyD/giphy.gif?cid=790b76116d54txe3c5nafra3c1a27wata7dd1l9qtx05tu6g&ep=v1_gifs_search&rid=giphy.gif&ct=g" class="bear-gif" alt="Reaction GIF" class="bear-gif" alt="Reaction GIF" />
-        <p id="message"> </p>
-        <div class="button-container">
-            <button id="yesBtn" class="btn">Yes</button>
-            <button id="noBtn" class="btn">No</button>
-        </div>
+
+<body class="dark">
+
+  <div class="warning">
+    Janudo… mari vaat sambhad ne 😒 naa click nahi karti
+  </div>
+
+  <audio id="music" loop>
+    <source src="tu-hai-toh-mujhe.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="card">
+
+    <h1 id="name">Janudo 🖤</h1>
+
+    <!-- secret mobile message -->
+    <div id="secret" class="hidden">
+      tu khabar pan nathi ke hu ketlo pyaar karu chu 🖤
     </div>
 
-    <script src="scripts.js"></script>
+    <div class="gif-wrapper">
+      <img id="gif" src="assets/bubu-dudu-sseeyall.gif" alt="dudu gif">
+    </div>
+
+    <p id="text" class="typewriter">
+      Janudo mari vaat sambhad ne…
+    </p>
+
+    <div class="buttons">
+      <button id="yes">Hmm 💖</button>
+      <button id="no">Naa 😏</button>
+    </div>
+
+    <div id="note" class="hidden">
+      <p id="letter"></p>
+    </div>
+
+  </main>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
