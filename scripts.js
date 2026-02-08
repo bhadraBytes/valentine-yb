@@ -100,6 +100,7 @@ yes.addEventListener("click", () => {
   no.style.display = "none";
 
   document.body.classList.add("warm");
+  document.body.classList.add("scrollable");
   music.play().catch(() => {});
 
   startGlow();

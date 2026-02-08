@@ -12,6 +12,11 @@ body.dark {
   transition:background 2s ease;
 }
 
+/* Enable scrolling when reading letter */
+body.scrollable {
+  overflow-y: auto;
+}
+
 /* Warning */
 .warning {
   position:fixed;
